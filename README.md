@@ -56,7 +56,15 @@ Stay tuned! Our code, dataset, and pretrain weights are coming soon.
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 
 ```
-@article{llavao1}
+@misc{xu2024llavao1letvisionlanguage,
+      title={LLaVA-o1: Let Vision Language Models Reason Step-by-Step},
+      author={Guowei Xu and Peng Jin and Li Hao and Yibing Song and Lichao Sun and Li Yuan},
+      year={2024},
+      eprint={2411.10440},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.10440},
+}
 ```
 
 ## 🙏 Acknowledgement
