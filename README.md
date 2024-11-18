@@ -2,13 +2,13 @@
 <img src="figures/logo.png" width="280px">
 </div>
 
-<h2 align="center"> <a href="https://arxiv.org/abs/2411.XXXXX">LLaVA-o1: Let Vision Language Models Reason Step-by-Step</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2411.10440">LLaVA-o1: Let Vision Language Models Reason Step-by-Step</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
 
 <h5 align=center>
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2411.XXXXX-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.XXXXX)
-[![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2Fruijie_zheng12%2Fstatus%2F1720097914889064471)](https://x.com/home)
+[![arXiv](https://img.shields.io/badge/Arxiv-2411.10440-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.10440)
+[![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/Kevin_GuoweiXu/status/1858338565463421244)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/LLaVA-o1/blob/main/LICENSE)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-o1&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-o1&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 
@@ -16,7 +16,7 @@
 
 ## 📣 News
 
-- **[2024/11/18]** We've released our paper: [https://arxiv.org/abs/2411.XXXXX](https://arxiv.org/abs/2411.XXXXX)
+- **[2024/11/18]** We've released our paper: [https://arxiv.org/abs/2411.10440](https://arxiv.org/abs/2411.10440)
 - **[2024/11/18]** Welcome to **watch** 👀 this repository for the latest updates.
 
 ## 🔥 Highlights
