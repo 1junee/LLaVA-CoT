@@ -16,6 +16,7 @@
 
 ## 📣 News
 
+- **[2024/11/20]** We've released the pretrained weights: [https://huggingface.co/Xkev/Llama-3.2V-11B-cot]
 - **[2024/11/18]** We've released our paper: [https://arxiv.org/abs/2411.10440](https://arxiv.org/abs/2411.10440)
 - **[2024/11/18]** Welcome to **watch** 👀 this repository for the latest updates.
 
