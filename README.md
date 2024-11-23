@@ -20,7 +20,7 @@
 
 ## 📣 News
 
-- **[2024/11/20]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
+- **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
 - **[2024/11/21]** Based on recent feedback from social media platforms like X, we have decided to **rename LLaVA-o1 to LLaVA-CoT**. We are currently updating this change across platforms such as arXiv and GitHub, which is expected to take approximately 2-3 days.
 - **[2024/11/20]** We've released the pretrained weights: [https://huggingface.co/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/Xkev/Llama-3.2V-11B-cot)
 - **[2024/11/18]** We've released our paper: [https://arxiv.org/abs/2411.10440](https://arxiv.org/abs/2411.10440)
