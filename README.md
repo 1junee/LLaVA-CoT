@@ -18,6 +18,8 @@
 
 </h5>
 
+<h5 align="center">本项目希望构建开源慢思考大模型，由北大-兔展AIGC联合实验室共同发起。</h5>
+
 ## 📣 News
 
 - **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
