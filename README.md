@@ -2,7 +2,7 @@
 <img src="figures/logo.png" width="280px">
 </div>
 
-<h2 align="center"> <a href="https://arxiv.org/abs/2411.10440">LLaVA-CoT: Let Vision Language Models Reason Step-by-Step</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2411.10440v2">LLaVA-CoT: Let Vision Language Models Reason Step-by-Step</a></h2>
 
 <h5 align="center"><p>This project was previously named LLaVA-o1. We have renamed it to LLaVA-CoT. </h5>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest update.</h5>
@@ -11,7 +11,7 @@
 
 [![Demo](https://img.shields.io/badge/⚡-Hugging%20Face%20Demo-yellow.svg)](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
 [![hf](https://img.shields.io/badge/🤗-Hugging%20Face-blue.svg)](https://huggingface.co/Xkev/Llama-3.2V-11B-cot)
-[![arXiv](https://img.shields.io/badge/Arxiv-2411.10440-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.10440)
+[![arXiv](https://img.shields.io/badge/Arxiv-2411.10440v2-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.10440v2)
 [![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2FKevin_GuoweiXu%2Fstatus%2F1858338565463421244)](https://x.com/Kevin_GuoweiXu/status/1858338565463421244)
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/LLaVA-CoT/blob/main/LICENSE)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-CoT&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-CoT&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
@@ -24,7 +24,7 @@
 
 - **[2024/11/25]** We've released the code for dataset generation: [dataset_generation/generate.py](dataset_generation/generate.py)
 - **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
-- **[2024/11/21]** Based on recent feedback from social media platforms like X, we have decided to **rename LLaVA-o1 to LLaVA-CoT**. We are currently updating this change across platforms such as arXiv and GitHub, which is expected to take approximately 2-3 days.
+- **[2024/11/21]** LLaVA-o1 is renamed to LLaVA-CoT [https://arxiv.org/abs/2411.10440v2](https://arxiv.org/abs/2411.10440v2).
 - **[2024/11/20]** We've released the pretrained weights: [https://huggingface.co/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/Xkev/Llama-3.2V-11B-cot)
 - **[2024/11/18]** We've released our paper: [https://arxiv.org/abs/2411.10440](https://arxiv.org/abs/2411.10440)
 - **[2024/11/18]** Welcome to **watch** 👀 this repository for the latest updates.
