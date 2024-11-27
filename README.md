@@ -22,7 +22,7 @@
 
 ## 📣 News
 
-- **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k]([dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k))
+- **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k](<[dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k)>)
 - **[2024/11/25]** We've released the code for dataset generation: [dataset_generation/generate.py](dataset_generation/generate.py)
 - **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
 - **[2024/11/21]** LLaVA-o1 is renamed to LLaVA-CoT [https://arxiv.org/abs/2411.10440v2](https://arxiv.org/abs/2411.10440v2).
@@ -58,9 +58,27 @@ LLaVA-CoT begins by outlining the problem, interprets relevant information from 
 | **Llama-3.2-11B-Vision-Instruct** | To determine the shear modulus of the polymer, we can use the formula for shear modulus in a small angle analysis: <br> \( G = \frac{F}{A \gamma} \) <br> where \( G \) is the shear modulus, \( F \) is the applied force, \( A \) is the area of the block, and \( \gamma \) is the shear strain. <br> Given that the top plate of the block displaces horizontally by 2 mm when subjected to a horizontal force of 2 kN, we can calculate the shear strain \( \gamma \). Since the displacement is horizontal and <span style="color: red;">the original length of the block is 400 mm</span>, the shear strain \( \gamma \) is: <br> \[ \gamma = \frac{\Delta x}{L} = \frac{2 \, \text{mm}}{400 \, \text{mm}} = 0.005 \] <br> Next, we calculate the area \( A \) of the block. The width of the block is given as 100 mm, and assuming <span style="color: red;">the height of the block is also 200 mm</span> (as given in the image analysis), the area \( A \) is: <br> \[ A = 100 \, \text{mm} \times 200 \, \text{mm} = 20000 \, \text{mm}^2 \] <br> Now, we can substitute these values into the formula for shear modulus: <br> \[ G = \frac{F}{A \gamma} = \frac{2000 \, \text{N}}{20000 \, \text{mm}^2 \times 0.005} = \frac{2000}{100} = 20 \, \text{MPa} \] <br> Therefore, the correct answer is <span style="color: red;">C: 20 MPa</span>.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | **LLaVA-CoT**                     | **_Summary stage: What's the problem? What should I do?_** <br> <span style="color: gray;">&lt;SUMMARY&gt;</span> To solve the problem, I will <span style="color: green;">determine the shear modulus</span> of the acetal polymer block using the relationship between the applied force, displacement, and dimensions of the block. I will <span style="color: green;">use the formula for shear modulus</span> and calculate the result. <span style="color: gray;">&lt;/SUMMARY&gt;</span> <br> **_Caption stage: What can I know from the image?_** <br> <span style="color: gray;">&lt;CAPTION&gt;</span> The image shows a rectangular block of acetal polymer fixed between two rigid plates. The top plate moves horizontally by 2 mm when a force \( P = 2 \, \text{kN} \) is applied. The block's dimensions are given as <span style="color: green;">400 mm in length, 200 mm in height</span>, and 100 mm in width. <span style="color: gray;">&lt;/CAPTION&gt;</span> <br> **_Reasoning stage: How to solve the problem step-by-step?_** <br> <span style="color: gray;">&lt;REASONING&gt;</span> The shear modulus \( G \) of the polymer can be calculated using the formula: <br> \[ G = \frac{F}{A \cdot \frac{\Delta x}{L}} \] <br> where: <br> - \( F \) is the applied force (2 kN), <br> - \( A \) is the area of the block's top surface (<span style="color: green;">100 mm x 400 mm = 40,000 mm²</span>), <br> - \( \Delta x \) is the horizontal displacement (2 mm), <br> - \( L \) is the height of the block (<span style="color: green;">200 mm</span>). <br> First, convert the force to Newtons: \( F = 2 \, \text{kN} = 2000 \, \text{N} \). <br> Next, calculate the shear modulus: <br> \[ G = \frac{2000}{40,000 \cdot \frac{2}{200}} \] <br> \[ G = \frac{2000}{40,000 \cdot 0.01} \] <br> \[ G = \frac{2000}{400} \] <br> \[ G = 5 \, \text{MPa} \] <br> <span style="color: gray;">&lt;/REASONING&gt;</span> <br> **_Conclusion stage: What is the final answer?_** <br> <span style="color: gray;">&lt;CONCLUSION&gt;</span> <span style="color: green;">B: 5 MPa</span> <span style="color: gray;">&lt;/CONCLUSION&gt;</span> |
 
-## 🛠️ Installation
+## 🛠️ Usage
 
-Stay tuned! Our code, dataset, and pretrain weights are coming soon.
+### Pretrained weights
+
+You can download the pretrained weights from the Huggingface: [Xkev/Llama-3.2V-11B-cot](https://huggingface.co/Xkev/Llama-3.2V-11B-cot).
+
+### Dataset
+
+You can download the dataset from the Huggingface: [Xkev/LLaVA-CoT-100k](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k).
+
+### Inference
+
+You can use the same code as Llama-3.2-11B-Vision-Instruct to load the model and perform inference.
+
+If you want to use perform inference time scaling, you can use code provided in [inference_demo/inference_demo.py](inference_demo/inference_demo.py).
+
+### Finetuning
+
+You may use any repository that supports Llama-3.2-11B-Vision-Instruct for finetuning.
+
+We recommend using [llama-recipes](https://github.com/Meta-Llama/llama-recipes).
 
 ## 📝 Citation
 
