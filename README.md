@@ -22,6 +22,7 @@
 
 ## 📣 News
 
+- **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k]([dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k))
 - **[2024/11/25]** We've released the code for dataset generation: [dataset_generation/generate.py](dataset_generation/generate.py)
 - **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
 - **[2024/11/21]** LLaVA-o1 is renamed to LLaVA-CoT [https://arxiv.org/abs/2411.10440v2](https://arxiv.org/abs/2411.10440v2).
