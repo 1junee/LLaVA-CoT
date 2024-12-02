@@ -85,14 +85,14 @@ We recommend using [llama-recipes](https://github.com/Meta-Llama/llama-recipes).
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 
 ```
-@misc{xu2024llavao1letvisionlanguage,
-      title={LLaVA-o1: Let Vision Language Models Reason Step-by-Step},
-      author={Guowei Xu and Peng Jin and Li Hao and Yibing Song and Lichao Sun and Li Yuan},
+@misc{xu2024llavacot,
+      title={LLaVA-CoT: Let Vision Language Models Reason Step-by-Step}, 
+      author={Guowei Xu and Peng Jin and Hao Li and Yibing Song and Lichao Sun and Li Yuan},
       year={2024},
       eprint={2411.10440},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.10440},
+      url={https://arxiv.org/abs/2411.10440}, 
 }
 ```
 
