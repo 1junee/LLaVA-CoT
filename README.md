@@ -16,6 +16,8 @@
 [![License](https://img.shields.io/badge/Code%20License-Apache2.0-yellow)](https://github.com/PKU-YuanGroup/LLaVA-CoT/blob/main/LICENSE)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-CoT&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FLLaVA-CoT&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 [![Replicate](https://replicate.com/chenxwh/llava-cot/badge)](https://replicate.com/chenxwh/llava-cot)
+[![Wisemodel](https://img.shields.io/badge/wisemodel-code-blue)](https://wisemodel.cn/codes/KevinTHU/LLaVA-CoT)
+
 </h5>
 
 <h5 align="center">本项目希望构建开源慢思考大模型，由北大-兔展AIGC联合实验室共同发起。</h5>
@@ -86,13 +88,13 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 
 ```
 @misc{xu2024llavacot,
-      title={LLaVA-CoT: Let Vision Language Models Reason Step-by-Step}, 
+      title={LLaVA-CoT: Let Vision Language Models Reason Step-by-Step},
       author={Guowei Xu and Peng Jin and Hao Li and Yibing Song and Lichao Sun and Li Yuan},
       year={2024},
       eprint={2411.10440},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.10440}, 
+      url={https://arxiv.org/abs/2411.10440},
 }
 ```
 
