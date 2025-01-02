@@ -24,6 +24,7 @@
 
 ## 📣 News
 
+- **[2025/01/02]** We discovered that when testing with the AI2D benchmark, we were using AI2D_TEST_NO_MASK, while the VLMEvalKit utilizes AI2D_TEST. We previously overlooked the distinction between the two, and we sincerely apologize for this oversight. We will make the necessary corrections.
 - **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k](<[dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k)>)
 - **[2024/11/25]** We've released the code for dataset generation: [dataset_generation/generate.py](dataset_generation/generate.py)
 - **[2024/11/23]** We've released the Gradio App: [https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot](https://huggingface.co/spaces/Xkev/Llama-3.2V-11B-cot)
@@ -34,7 +35,7 @@
 
 ## 🔥 Highlights
 
-**LLaVA-CoT** is the first visual language model capable of spontaneous, systematic reasoning, similar to GPT-o1!
+**LLaVA-CoT** is a visual language model capable of spontaneous, systematic reasoning.
 
 Our 11B model outperforms **Gemini-1.5-pro**,**GPT-4o-mini**, and **Llama-3.2-90B-Vision-Instruct** on six challenging multimodal benchmarks.
 
