@@ -24,6 +24,7 @@
 
 ## 📣 News
 
+- **[2025/01/02]** We released the full training code.
 - **[2025/01/02]** We discovered that when testing with the AI2D benchmark, we were using AI2D_TEST_NO_MASK, while the VLMEvalKit utilizes AI2D_TEST. We previously overlooked the distinction between the two, and we sincerely apologize for this oversight. We will make the necessary corrections.
 - **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k](<[dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k)>)
 - **[2024/11/25]** We've released the code for dataset generation: [dataset_generation/generate.py](dataset_generation/generate.py)
@@ -82,6 +83,16 @@ If you want to use perform inference time scaling, you can use code provided in 
 You may use any repository that supports Llama-3.2-11B-Vision-Instruct for finetuning.
 
 We recommend using [llama-recipes](https://github.com/Meta-Llama/llama-recipes).
+
+To reproduce our results, you can use the following command:
+
+```bash
+cd train
+pip install llama-recipes
+torchrun --nnodes 1 --nproc_per_node 8 --master_port 29500 finetuning.py --enable_fsdp --lr 1e-5  --num_epochs 3 --batch_size_training 4 --model_name meta-llama/Llama-3.2-11B-Vision-Instruct --dist_checkpoint_root_folder ./finetuned_model --dist_checkpoint_folder LLaVA-CoT --use_fast_kernels --dataset "custom_dataset" --custom_dataset.test_split "test" --custom_dataset.file "datasets/cot_dataset.py"  --run_validation False --batching_strategy padding
+```
+
+Remember to modify the `data_path` and  `image_base_path` in `train/cot_dataset.py` to your own path (the path to the training dataset).
 
 ## 📝 Citation
 
