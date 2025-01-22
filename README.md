@@ -78,6 +78,10 @@ You can use the same code as Llama-3.2-11B-Vision-Instruct to load the model and
 
 If you want to use perform inference time scaling, you can use code provided in [inference_demo/inference_demo.py](inference_demo/inference_demo.py).
 
+In order to run the demo, you need to replace this file with the original inference code for Llama-3.2-11B-Vision-Instruct in VLMEvalKit.
+
+Additionally, you need to replace the `processing_mllama.py` file in the transformers library with the one provided in [inference_demo/processing_mllama.py](inference_demo/processing_mllama.py).
+
 ### Finetuning
 
 You may use any repository that supports Llama-3.2-11B-Vision-Instruct for finetuning.
@@ -92,7 +96,7 @@ pip install llama-recipes
 torchrun --nnodes 1 --nproc_per_node 8 --master_port 29500 finetuning.py --enable_fsdp --lr 1e-5  --num_epochs 3 --batch_size_training 4 --model_name meta-llama/Llama-3.2-11B-Vision-Instruct --dist_checkpoint_root_folder ./finetuned_model --dist_checkpoint_folder LLaVA-CoT --use_fast_kernels --dataset "custom_dataset" --custom_dataset.test_split "test" --custom_dataset.file "datasets/cot_dataset.py"  --run_validation False --batching_strategy padding
 ```
 
-Remember to modify the `data_path` and  `image_base_path` in `train/cot_dataset.py` to your own path (the path to the training dataset).
+Remember to modify the `data_path` and `image_base_path` in `train/cot_dataset.py` to your own path (the path to the training dataset).
 
 ## 📝 Citation
 
