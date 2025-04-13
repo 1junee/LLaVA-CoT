@@ -24,6 +24,7 @@
 
 ## 📣 News
 
+- **[2025/04/13]** We have updated the inference script that does not rely on VLMEvalKit, based on the suggestion in [this issue](https://github.com/PKU-YuanGroup/LLaVA-CoT/issues/34).
 - **[2025/01/08]** We released the full training code.
 - **[2025/01/02]** We discovered that when testing with the AI2D benchmark, we were using AI2D_TEST_NO_MASK, while the VLMEvalKit utilizes AI2D_TEST. We previously overlooked the distinction between the two, and we sincerely apologize for this oversight. We will make the necessary corrections.
 - **[2024/11/28]** We've released the dataset: [https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k](<[dataset_generation/generate.py](https://huggingface.co/datasets/Xkev/LLaVA-CoT-100k)>)
@@ -76,11 +77,7 @@ You can download the dataset from the Huggingface: [Xkev/LLaVA-CoT-100k](https:/
 
 You can use the same code as Llama-3.2-11B-Vision-Instruct to load the model and perform inference.
 
-If you want to use perform inference time scaling, you can use code provided in [inference_demo/inference_demo.py](inference_demo/inference_demo.py).
-
-In order to run the demo, you need to replace this file with the original inference code for Llama-3.2-11B-Vision-Instruct in VLMEvalKit.
-
-Additionally, you need to replace the `processing_mllama.py` file in the transformers library with the one provided in [inference_demo/processing_mllama.py](inference_demo/processing_mllama.py).
+If you want to use perform inference time scaling, you can refer to the detailed instructions provided in [this file](inference/README.md).
 
 ### Finetuning
 
