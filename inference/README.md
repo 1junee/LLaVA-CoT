@@ -5,6 +5,7 @@ You have two options to run inference with LLaVA-CoT.
 1. **Run the inference script.** This is the simplest way to have a quick test.
     - In order to run the demo, you need to create a new environment with the following command:
       ```bash
+      cd demo
       conda create -n llava-cot python=3.10
       conda activate llava-cot
       pip install -r requirements.txt
