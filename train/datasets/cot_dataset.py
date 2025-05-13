@@ -66,7 +66,6 @@ def get_custom_dataset(dataset_config, processor, split, split_ratio=1):
         if "image" not in entry:
             continue
         image_file = os.path.join(image_base_path, entry["image"])
-        image = Image.open(image_file)
         
         texts = []
         conversation_pair = {}
@@ -81,7 +80,7 @@ def get_custom_dataset(dataset_config, processor, split, split_ratio=1):
                 conversation_pair = {} 
                 
         sample = {
-            "images": [image],  
+            "images": [{"path": image_file}],
             "texts": texts     
         }
         samples.append(sample)
