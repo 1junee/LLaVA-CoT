@@ -1,4 +1,0 @@
-transformers==4.45.0
-torch
-Pillow
-accelerate
