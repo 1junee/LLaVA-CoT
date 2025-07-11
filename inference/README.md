@@ -16,7 +16,9 @@ You have two options to run inference with LLaVA-CoT.
         --model_name_or_path "Xkev/Llama-3.2V-11B-cot" \
         --prompt "How to make this pastry?" \
         --image_path "pastry.png" \
-        --type "stage"
+        --type "stage" \
+        --device cpu
+      # add --load_in_8bit when using GPU with limited memory
       ```
       You are recommended to take a look at the [simple_inference.py](demo/simple_inference.py) file to see more available arguments.
     - Additionally, you need to replace the `processing_mllama.py` file in the transformers library (`YOUR_ENV/lib/python3.10/site-packages/transformers/models/mllama/processing_mllama.py`) with the one provided in [processing_mllama.py](processing_mllama.py).
