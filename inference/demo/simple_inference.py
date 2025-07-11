@@ -39,8 +39,13 @@ parser.add_argument(
 parser.add_argument(
     "--device",
     type=str,
-    default="cuda",
+    default="cpu",
     help="Device to use for inference.",
+)
+parser.add_argument(
+    "--load_in_8bit",
+    action="store_true",
+    help="Load the model using 8-bit quantization to reduce memory usage.",
 )
 args = parser.parse_args()
 
@@ -67,11 +72,36 @@ class StopOnPeriod(StoppingCriteria):
         return False
 
 model_name_or_path = args.model_name_or_path
-model = MllamaForConditionalGeneration.from_pretrained(
+load_kwargs = {
+    "torch_dtype": torch.bfloat16,
+}
+
+if args.device == "cpu":
+    load_kwargs["device_map"] = "cpu"
+else:
+    load_kwargs["device_map"] = "auto"
+
+if getattr(args, "load_in_8bit", False):
+    load_kwargs["load_in_8bit"] = True
+
+try:
+    model = MllamaForConditionalGeneration.from_pretrained(
+        model_name_or_path,
+        **load_kwargs,
+    )
+    model.to(args.device)
+except RuntimeError as e:
+    print(f"RuntimeError while loading model on {args.device}: {e}")
+    print("Falling back to CPU.")
+    args.device = "cpu"
+    model = MllamaForConditionalGeneration.from_pretrained(
         model_name_or_path,
         torch_dtype=torch.bfloat16,
-        device_map='cpu',
-    ).cuda().eval()
+        device_map="cpu",
+    )
+    model.to("cpu")
+
+model.eval()
 device = args.device
 processor = AutoProcessor.from_pretrained(model_name_or_path)
 kwargs = dict(do_sample=True, max_new_tokens=2048, temperature=0.6, top_p=0.9)
